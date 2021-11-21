@@ -1,31 +1,344 @@
 .page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
-  margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+    min-width: 1100px;
+    /* мы ещё не умеем делать мобильную версию сайта, */
+    /* поэтому выше установлена минимальная ширина страницы */
+    max-width: 1600px;
+    /* выше установили ограничение по максимальной ширине */
+    margin: 0 auto;
+    /* выше для экранов больше 1600px отцентрировали весь контент */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  /* выше установили ограничения для секции */
+    height: 100vh;
+    min-height: 600px;
+    max-height: 756px;
+    /* выше установили ограничения для секции */
+    background-color: #f2f2f2;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
+
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+
 .header__square-pic {
-  height: 568px;
-  width: 568px;
+    position: absolute;
+    top: 64px;
+    right: 0px;
+    height: 568px;
+    width: 568px;
+    background-color: #2f80ed;
+    z-index: 0;
 }
 
+
 /* и элемента с модификатором вида ключ-значение */
+
 .table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+    width: 200px;
+    color: white;
+    margin-right: 0;
+    margin-top: 80px;
+}
+
+.logo {
+    width: 183px;
+    height: 32px;
+}
+
+.logo_place_header {
+    position: absolute;
+    top: 30px;
+    left: 64px;
+}
+
+.logo_place_footer {
+    height: 35px;
+}
+
+.header__title {
+    width: 730px;
+    line-height: 96px;
+    font-size: 102px;
+    font-weight: bold;
+    margin-left: 64px;
+    position: relative;
+}
+
+.header__subtitle {
+    position: absolute;
+    bottom: 30px;
+    left: 64px;
+    width: 388px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.header__link {}
+
+.header__main-illustration {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-size: contain;
+    width: 765px;
+    height: 608px;
+    z-index: 1;
+}
+
+.description {
+    margin: 100px auto;
+    width: 80vw;
+}
+
+.two-columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    align-items: stretch;
+}
+
+.two-columns_brief {
+    width: 175px;
+    line-height: 1.2;
+    font-size: 12px;
+    font-weight: normal;
+    color: #2f80ed;
+    margin: 0px;
+}
+
+.two-columns_main-text {
+    width: 80%;
+    min-width: 784px;
+    line-height: 34px;
+    font-size: 24px;
+}
+
+.two-columns_paragraph {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.two-columns_span-accent {
+    font-weight: bolder;
+}
+
+.two-columns_paragraph-2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.digits {
+    margin: 0 0 100px 0;
+    display: block;
+}
+
+
+/* Хром автоматичсеки задает параметры для тега <p> и <h> */
+
+.anti-text-margin {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.section-title {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.section-subtitle {
+    width: 60%;
+    text-align: center;
+    margin: 20px auto 0 auto;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.table {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table_cell {
+    width: 250px;
+    flex-shrink: 0;
+    margin-top: 60px;
+}
+
+.heading {
+    margin: 0px;
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.text {
+    margin: 20px 0 0;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.feynman {
+    position: relative;
+    height: 890px;
+    background-color: #f2f2f2;
+    padding-top: 100px;
+}
+
+.feynman_title {
+    position: relative;
+    width: 648px;
+    margin: 0 auto;
+    line-height: 1.15;
+    font-size: 120px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.feynman_subtitle {
+    position: relative;
+    margin: 70px auto;
+    text-align: center;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+    z-index: 2;
+}
+
+.feynman_link {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.feynman_picture {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 867px;
+    height: 637px;
+    z-index: 1;
+}
+
+.kaufman {
+    overflow: hidden;
+    background-color: #1f1f1f;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    position: relative;
+}
+
+.table_dark {
+    position: relative;
+    color: white;
+    z-index: 2;
+}
+
+.table_cell_dark {
+    width: 200px;
+    margin-top: 80px;
+}
+
+.triangle {
+    position: absolute;
+    right: -210px;
+    top: 0;
+    width: 877px;
+    height: 877px;
+    z-index: 1;
+}
+
+.footer {
+    display: flex;
+    min-height: 350px;
+    background-color: #1f1f1f;
+}
+
+.footer_column {
+    justify-content: center;
+    margin: 40px auto 60px;
+    width: 45vw;
+    flex-basis: 711px;
+    border-style: groove;
+}
+
+.footer_column-2 {
+    margin-left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+.footer_column-1 {
+    position: relative;
+    margin-right: 0;
+}
+
+.footer_author {
+    position: absolute;
+    bottom: 2px;
+    left: 0px;
+    color: white;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.footer_column_content_info {
+    border-style: groove;
+    margin-left: 100px;
+    color: white;
+}
+
+.footer_column_content_social {
+    border-style: groove;
+    margin-left: 100px;
+    color: white;
+}
+
+.footer_column_links {
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+.footer_column-heading {
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.VK-margin {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.a-style {
+    text-decoration: none;
+    color: white;
 }
