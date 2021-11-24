@@ -19,6 +19,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 
@@ -59,6 +60,7 @@
     font-weight: bold;
     margin-left: 64px;
     position: relative;
+    z-index: 2;
 }
 
 .header__subtitle {
@@ -70,6 +72,7 @@
     font-size: 18px;
     font-weight: normal;
     margin: 0;
+    z-index: 2;
 }
 
 .header__link {
@@ -87,15 +90,16 @@
 }
 
 .description {
-    margin: 100px auto;
-    width: 80vw;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .two-columns {
     display: flex;
     justify-content: space-between;
-    margin: 0px;
+    margin: 0 auto 0;
     align-items: stretch;
+    width: 80vw
 }
 
 .two-columns__brief {
@@ -117,6 +121,7 @@
 .two-columns__paragraph {
     display: block;
     margin-top: 30px;
+    margin-bottom: 0px;
 }
 
 .two-columns__paragraph:first-of-type {
@@ -128,7 +133,8 @@
 }
 
 .digits {
-    margin: 0 0 100px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: block;
 }
 
@@ -183,7 +189,7 @@
     position: relative;
     min-height: 890px;
     padding-top: 100px;
-    background: #f2f2f2 url(C:/Users/admin/dev/how-to-learn/images/feynman.png) no-repeat bottom left;
+    background: #f2f2f2 url(../images/feynman.png) no-repeat bottom left;
 }
 
 .feynman__title {
@@ -216,16 +222,6 @@
     text-decoration: none;
 }
 
-
-/*.feynman_picture {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 867px;
-    height: 637px;
-    z-index: 1;
-} */
-
 .kaufman {
     overflow: hidden;
     background-color: #1f1f1f;
@@ -254,20 +250,25 @@
     width: 877px;
     height: 877px;
     z-index: 1;
+    background-image: url(../images/kaufman-triangle.svg);
 }
 
 .section-title_theme_dark {
+    position: relative;
     color: white;
+    z-index: 2;
 }
 
 .section-subtitle_theme_dark {
+    position: relative;
     color: white;
+    z-index: 2;
 }
 
 .footer {
     min-height: 250px;
     background-color: #1f1f1f;
-    padding: 40px 0 60px;
+    padding: 60px 0 40px;
     display: flex;
 }
 
