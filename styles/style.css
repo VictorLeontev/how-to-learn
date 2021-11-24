@@ -54,6 +54,8 @@
 }
 
 .header__title {
+    margin-bottom: 0;
+    margin-top: 0;
     max-width: 730px;
     line-height: 96px;
     font-size: 102px;
@@ -76,6 +78,7 @@
 }
 
 .header__link {
+    color: #2f80ed;
     text-decoration: none;
 }
 
@@ -91,7 +94,6 @@
 
 .description {
     padding-top: 100px;
-    padding-bottom: 100px;
 }
 
 .two-columns {
@@ -161,8 +163,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .table__cell {
@@ -183,6 +184,7 @@
     line-height: 1.2;
     font-size: 18px;
     font-weight: normal;
+    padding: 0;
 }
 
 .feynman {
@@ -213,6 +215,7 @@
 }
 
 .feynman__link {
+    color: #2f80ed;
     position: absolute;
     top: 50%;
     right: 50px;
@@ -228,19 +231,25 @@
     padding-top: 90px;
     padding-bottom: 90px;
     position: relative;
+    z-index: 1;
 }
 
 .table_theme_dark {
-    position: relative;
-    color: white;
     z-index: 2;
 }
 
 .table__cell_theme_dark {
     width: 200px;
-    color: white;
     margin-right: 0;
     margin-top: 80px;
+}
+
+.table__text_theme_dark {
+    color: white;
+}
+
+.table__header_theme_dark {
+    color: white;
 }
 
 .kaufman__triangle {
@@ -249,7 +258,7 @@
     top: 0;
     width: 877px;
     height: 877px;
-    z-index: 1;
+    z-index: -1;
     background-image: url(../images/kaufman-triangle.svg);
 }
 
@@ -279,42 +288,48 @@
     margin: 0 auto 0;
 }
 
+.footer__column {
+    color: white;
+}
+
 .footer__column_content_copyright {
     position: relative;
     flex-basis: 711px;
-    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .footer__author {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    color: white;
     line-height: 25px;
     font-size: 18px;
     font-weight: normal;
-    margin: 18px auto;
+    margin-top: 18px;
+    margin-bottom: 18px;
 }
 
 .footer__column_content_info {
-    color: white;
     align-items: stretch;
 }
 
 .footer__column_content_social {
-    color: white;
     align-items: stretch;
 }
 
-.footer__column_links {
+
+/* Я случайно ошибся с нижним подчеркиванием */
+
+.footer__column-links {
     line-height: 30px;
     font-size: 18px;
     font-weight: normal;
     margin-top: 20px;
     margin-bottom: 16px;
+    padding: 0;
+    list-style-type: none;
 }
 
-.footer__column_link {
+.footer__column-link {
     display: block;
     text-decoration: none;
     color: white;
