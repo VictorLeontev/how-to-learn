@@ -1,6 +1,10 @@
+/*Style Normalize*/
+
+@import url(../vendor/normalize.css);
+
 /*style Page.css*/
 
-@import url(../blocks/root/page.css);
+@import url(../blocks/page/page.css);
 
 /*Импорт блоков header*/
 
